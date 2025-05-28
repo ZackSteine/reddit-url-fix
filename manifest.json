@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Reddit New Tab URL Fixer (Firefox)",
+  "name": "Reddit New Tab URL Fixer",
   "version": "1.0",
   "description": "Prevents Reddit from rewriting the current tab's URL when opening threads in a new tab (Firefox bug only).",
   "permissions": [],
@@ -11,6 +11,11 @@
       "run_at": "document_idle"
     }
   ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "reddit-url-fix@zacksteine.github"
+    }
+  },
   "author": "Zack Steine",
   "homepage_url": "https://github.com/ZackSteine/reddit-url-fix.git",
   "icons": {
