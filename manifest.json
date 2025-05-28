@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Reddit URL Fixer (Firefox",
+  "version": "1.0",
+  "description": "Prevents Reddit from rewriting the current tab's URL when opening threads in a new tab (Firefox bug only).",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["*://www.reddit.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
