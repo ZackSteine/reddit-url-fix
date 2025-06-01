@@ -4,7 +4,7 @@ Fixes a bug where Reddit overwrites the current tab's URL when opening threads i
 
 ## Installation
 
-🦊 Get it on [Firefox Add-ons](https://addons.mozilla.org/...)
+🦊 Get it on [Firefox Add-ons](https://addons.mozilla.org/en-GB/firefox/addon/reddit-new-tab-url-fixer/)
 
 ## Why?
 
