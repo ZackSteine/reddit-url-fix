@@ -1,6 +1,7 @@
 // Prevent Reddit from overwriting the current tab's URL when opening a thread in a new tab
-document.addEventListener("click", (e) => {
-  const link = e.target.closest("a");
+window.addEventListener("click", (e) => {
+  const composedPath = e.composedPath(); // 
+  const link = composedPath.find((el) => el?.tagName === "A");
   if (!link) return;
 
   const href = link.getAttribute("href");
