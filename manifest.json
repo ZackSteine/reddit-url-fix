@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Reddit New Tab URL Fixer",
-  "version": "1.1",
+  "version": "1.2",
   "description": "Prevents Reddit from rewriting the current tab's URL when opening threads in a new tab (Firefox bug only).",
   "permissions": [],
   "content_scripts": [
