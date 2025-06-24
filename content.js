@@ -7,12 +7,10 @@ window.addEventListener("click", (e) => {
   const href = link.getAttribute("href");
   const target = link.getAttribute("target");
 
-  const isThread = /^\/r\/[^\/]+\/comments\//.test(href);
-  const currentIsThread = /^\/r\/[^\/]+\/comments\//.test(window.location.pathname);
-
-  // If user is clicking a thread link with target=_blank, and we're not already in a thread,
-  // stop Reddit's router from hijacking the click and rewriting the original tab's URL.
-  if (target === "_blank" && isThread && !currentIsThread) {
+  // If user is clicking a thread link with target=_blank
+  // stop Reddit's router from hijacking the click and 
+  // rewriting the original tab's URL.
+  if (target === "_blank") {
     e.preventDefault();
     window.open(link.href, "_blank");
     e.stopPropagation();
